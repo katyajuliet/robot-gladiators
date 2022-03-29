@@ -12,7 +12,8 @@ console.log(enemyNames.length);
 console.log(enemyNames[0]);
 console.log(enemyNames[3]);
 
-// fight function (now with parameter for enemy's name)
+
+  // fight function (now with parameter for enemy's name)
 var fight = function(enemyName) {
   while (playerHealth > 0 && enemyHealth > 0) {
     // ask player if they'd like to fight or run
@@ -94,3 +95,16 @@ for (var i = 0; i < enemyNames.length; i++) {
     break;
   }
 }
+
+
+// function to start a new game
+var startGame = function() {
+  // reset player stats
+  playerHealth = 100;
+  playerAttack = 10;
+  playerMoney = 10;
+}
+
+
+// start first game when page loads
+startGame();
